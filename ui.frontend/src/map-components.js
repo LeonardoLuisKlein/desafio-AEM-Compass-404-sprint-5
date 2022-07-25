@@ -7,6 +7,7 @@ import Image from './components/Micro/Image/Image'
 import Footer from './components/Experience-fragments/Footer/Footer'
 import Main from './components/Containers/Main/Main'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
+import TextComponent from './components/Micro/TextComponent/TextComponent'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -35,10 +36,13 @@ MapTo('vue/components/multifield-example-component')(
   EditConfig
 )
 
-// Checkbox Component Mapping
+// TextComponent Component Mapping
+MapTo('vue/components/text-component')(TextComponent, EditConfig)
+
+// Footer Component Mapping
 MapTo('vue/components/footer')(Footer, EditConfig)
 
-// Checkbox Component Mapping
+// Main Component Mapping
 MapTo('vue/components/main')(Main, EditConfig)
 
 // Checkbox Component Mapping
