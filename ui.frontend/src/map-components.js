@@ -6,6 +6,7 @@ import Image from './components/Micro/Image/Image'
 import Footer from './components/Experience-fragments/Footer/Footer'
 import Main from './components/Containers/Main/Main'
 import TextContent from './components/Micro/TextContent/TextContent'
+import TextContent from './components/Micro/Title/Title'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -34,6 +35,9 @@ MapTo('vue/components/multifield-example-component')(
   MultifieldExampleComponent,
   EditConfig
 )
+
+// Title Component Mapping
+MapTo('vue/components/title')(Title, EditConfig)
 
 // TextContent Component Mapping
 MapTo('vue/components/text-content')(TextContent, EditConfig)
