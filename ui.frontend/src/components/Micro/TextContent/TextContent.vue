@@ -4,15 +4,15 @@
 
 <script>
 export default {
-  name: "TextContent",
+  name: 'TextContent',
   props: {
     text: {
       type: String,
-      default: ""
+      default: ''
     },
     idText: {
       type: String
-    },
+    }
   }
 }
 </script>
@@ -23,5 +23,11 @@ export default {
   font-weight: 400;
   font-size: 1.5em;
   color: #4F4F4F;
+}
+#basicRedText {
+  font-family: 'Space Mono';
+  font-weight: 400;
+  font-size: 1.5em;
+  color: red;
 }
 </style>

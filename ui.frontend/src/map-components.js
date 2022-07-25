@@ -1,13 +1,12 @@
 import CustomClasses from './components/CustomClasses/CustomClasses'
-import Text from './components/Micro/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Micro/Checkbox/Checkbox'
 import Header from './components/Experience-fragments/Header/Header'
 import Image from './components/Micro/Image/Image'
 import Footer from './components/Experience-fragments/Footer/Footer'
 import Main from './components/Containers/Main/Main'
+import TextContent from './components/Micro/TextContent/TextContent'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
-import TextComponent from './components/Micro/TextComponent/TextComponent'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -36,8 +35,8 @@ MapTo('vue/components/multifield-example-component')(
   EditConfig
 )
 
-// TextComponent Component Mapping
-MapTo('vue/components/text-component')(TextComponent, EditConfig)
+// TextContent Component Mapping
+MapTo('vue/components/text-content')(TextContent, EditConfig)
 
 // Footer Component Mapping
 MapTo('vue/components/footer')(Footer, EditConfig)
@@ -58,15 +57,6 @@ MapTo('vue/components/image')(Image, {
     return !props || !props.src || props.src.trim().length < 1
   },
   resourceType: 'vue/components/image'
-})
-
-// Text Component Mapping
-MapTo('vue/components/text')(Text, {
-  emptyLabel: 'Text',
-
-  isEmpty: function (props) {
-    return !props || !props.text || props.text.trim().length < 1
-  }
 })
 
 // Container Component Mapping
