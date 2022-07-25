@@ -1,9 +1,11 @@
 import CustomClasses from './components/CustomClasses/CustomClasses'
-import Text from './components/Text/Text'
+import Text from './components/Micro/Text/Text'
 import AppPage from './components/Page/AppPage'
-import CheckBox from './components/Checkbox/Checkbox'
-import Header from './components/Header/Header'
-import Image from './components/Image/Image'
+import CheckBox from './components/Micro/Checkbox/Checkbox'
+import Header from './components/Experience-fragments/Header/Header'
+import Image from './components/Micro/Image/Image'
+import Footer from './components/Experience-fragments/Footer/Footer'
+import Main from './components/Containers/Main/Main'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -32,6 +34,12 @@ MapTo('vue/components/multifield-example-component')(
   MultifieldExampleComponent,
   EditConfig
 )
+
+// Checkbox Component Mapping
+MapTo('vue/components/footer')(Footer, EditConfig)
+
+// Checkbox Component Mapping
+MapTo('vue/components/main')(Main, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
