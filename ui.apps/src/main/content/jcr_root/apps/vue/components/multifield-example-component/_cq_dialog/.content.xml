@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  SPA Vue Project CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 SPA Vue Project
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of SPA Vue Project and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to SPA Vue Project
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from SPA Vue Project.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Vue - Multifield Example Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <items composite="{Boolean}true"
+                      fieldLabel="Items"
+                      jcr:primaryType="nt:unstructured"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                  <field cq-msm-lockable="./items"
+                         jcr:primaryType="nt:unstructured"
+                         name="./items"
+                         sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                     <items jcr:primaryType="nt:unstructured">
+                        <type fieldLabel="Tipo de Input"
+                              jcr:primaryType="nt:unstructured"
+                              name="./type"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <imageResType jcr:primaryType="nt:unstructured"
+                                      name="./image/sling:resourceType"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                      value="core/wcm/components/image/v2/image"/>
+                        <image allowUpload="{Boolean}false"
+                               autoStart="{Boolean}false"
+                               class="cq-droptarget"
+                               fieldLabel="Imagem"
+                               fileNameParameter="./image/fileName"
+                               fileReferenceParameter="./image/fileReference"
+                               jcr:primaryType="nt:unstructured"
+                               mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                               multiple="{Boolean}false"
+                               name="./image/file"
+                               sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                               title="Drag to select image"
+                               uploadUrl="${suffix.path}"
+                               useHTML5="{Boolean}true"/>
+                     </items>
+                  </field>
+               </items>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>
