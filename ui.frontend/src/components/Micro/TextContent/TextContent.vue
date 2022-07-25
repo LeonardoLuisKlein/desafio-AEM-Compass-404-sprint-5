@@ -1,5 +1,5 @@
 <template>
-  <p id="idText">{{ text }}</p>
+  <p :id="idText">{{ text }}</p>
 </template>
 
 <script>
