@@ -58,6 +58,6 @@ export default {
 
 <style lang="scss">
 section {
-  max-width: 30vw;
+  max-width: 36em;
 }
 </style>

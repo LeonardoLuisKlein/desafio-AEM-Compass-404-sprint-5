@@ -28,5 +28,6 @@ export default {
   font-weight: 700;
   font-size: 0.875em;
   color: #FFFFFF;
+  margin-top: 2em;
 }
 </style>

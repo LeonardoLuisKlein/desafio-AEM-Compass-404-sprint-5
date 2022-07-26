@@ -33,12 +33,4 @@ export default {
 header {
   width: 100vw;
 }
-
-#basicHeader {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5em;
-  color: #333333;
-}
 </style>
