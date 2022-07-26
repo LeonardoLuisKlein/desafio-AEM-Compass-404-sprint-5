@@ -18,11 +18,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
 #basicText {
   font-family: 'Space Mono';
   font-weight: 400;
   font-size: 1.5em;
   color: #4F4F4F;
+  max-width: 23vw;
+  text-align: left;
+  margin-top: 3em;
 }
 #basicRedText {
   font-family: 'Space Mono';

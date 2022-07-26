@@ -13,8 +13,15 @@ export default {
 }
 </script>
 
-<style scoped>
-img {
-  max-width: 40vw;
+<style lang="scss" scoped>
+template {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+
+  img {
+    width: 40vw;
+  }
 }
 </style>

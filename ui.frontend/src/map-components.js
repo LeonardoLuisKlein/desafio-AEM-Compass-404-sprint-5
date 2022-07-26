@@ -8,7 +8,6 @@ import Main from './components/Containers/Main/Main'
 import TextContent from './components/Micro/TextContent/TextContent'
 import Title from './components/Micro/Title/Title'
 import Button from './components/Micro/Button/Button'
-import ImageContent from './components/Micro/ImageContent/ImageContent'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -37,9 +36,6 @@ MapTo('vue/components/multifield-example-component')(
   MultifieldExampleComponent,
   EditConfig
 )
-
-// ImageContent Component Mapping
-MapTo('vue/components/image-content')(ImageContent, EditConfig)
 
 // Button Component Mapping
 MapTo('vue/components/button')(Button, EditConfig)
