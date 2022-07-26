@@ -1,17 +1,30 @@
 <template>
   <header>
-    <Title idTitle="" type="" text=""/>
+    <Title :idTitle="idHead" :type="typeHead" :text="textHead" />
   </header>
 </template>
 
 <script>
 // Imports
-import Title from './Micro/Title/Title.vue'
+import Title from '../../Micro/Title/Title.vue'
 
 export default {
   name: 'Header',
-  components:{
-    Title, 
+  components: {
+    Title
+  },
+  props: {
+    textHead: {
+      type: String,
+      default: ''
+    },
+    idHead: {
+      type: String
+    },
+    Type: {
+      type: String,
+      default: 'h1'
+    }
   }
 }
 </script>
@@ -19,5 +32,13 @@ export default {
 <style scoped>
 header {
   width: 100vw;
+}
+
+#basicHeader {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333333;
 }
 </style>
