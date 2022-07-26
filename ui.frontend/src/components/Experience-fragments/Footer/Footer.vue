@@ -5,8 +5,10 @@
 </template>
 
 <script>
+import Title from '../../Micro/Title/Title.vue'
+
 export default {
- name: 'Footer',
+  name: 'Footer',
   components: {
     Title
   },
