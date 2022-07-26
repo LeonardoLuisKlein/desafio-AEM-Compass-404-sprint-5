@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'TextContent',
+  name: 'Title',
   props: {
     text: {
       type: String,
