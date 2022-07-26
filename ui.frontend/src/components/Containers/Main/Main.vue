@@ -34,7 +34,7 @@ export default {
     },
     mainTitleText: {
       type: String,
-      default: ''
+      default: 'I have bad news for you'
     },
     mainId: {
       type: String,
@@ -42,7 +42,7 @@ export default {
     },
     mainText: {
       type: String,
-      default: ''
+      default: 'The page you are looking for might be removed or is temporarly unavailable'
     },
     mainButtonId: {
       type: String,
@@ -58,6 +58,6 @@ export default {
 
 <style lang="scss">
 section {
-  max-width: 50vw;
+  max-width: 30vw;
 }
 </style>
