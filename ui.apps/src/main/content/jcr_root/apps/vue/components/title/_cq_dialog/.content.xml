@@ -21,6 +21,11 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="ID Title"
                         name="./idTitle"/>
+                        <type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Type"
+                        name="./type"/>
                 </items>
             </column>
         </items>

@@ -15,7 +15,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: ''
+      default: '404 NOT FOUND'
     },
     idTitle: {
       type: String

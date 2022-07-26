@@ -1,23 +1,44 @@
 <template>
   <header>
-    <h1>OLÁ, SOU UM HEADER</h1>
-    <p>SOU O TEXTO DO HEADER</p>
+    <Title :idTitle="idHead" :type="typeHead" :text="textHead" />
   </header>
 </template>
 
 <script>
 // Imports
+import Title from '../../Micro/Title/Title.vue'
 
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: {
+    Title
+  },
+  props: {
+    textHead: {
+      type: String,
+      default: ''
+    },
+    idHead: {
+      type: String
+    },
+    Type: {
+      type: String,
+      default: 'h1'
+    }
+  }
 }
 </script>
 
 <style scoped>
 header {
-  background-color: #eee;
+  width: 100vw;
 }
-h1 {
-  color: red;
+
+#basicHeader {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333333;
 }
 </style>
