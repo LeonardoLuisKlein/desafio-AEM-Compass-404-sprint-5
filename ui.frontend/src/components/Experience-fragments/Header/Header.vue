@@ -21,7 +21,7 @@ export default {
     idHead: {
       type: String
     },
-    Type: {
+    typeHead: {
       type: String,
       default: 'h1'
     }
