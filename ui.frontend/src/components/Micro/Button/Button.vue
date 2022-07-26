@@ -12,7 +12,7 @@ export default {
     },
     idButton: {
       type: String
-    },
+    }
   }
 }
 
@@ -22,11 +22,11 @@ export default {
 #basicButton {
   width: 13.5em;
   height: 4.25em;
-  color: #333333;
+  background-color: #333333;
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
   font-size: 0.875em;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 </style>
