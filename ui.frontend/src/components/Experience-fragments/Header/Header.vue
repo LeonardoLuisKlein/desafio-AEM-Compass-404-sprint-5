@@ -1,23 +1,23 @@
 <template>
   <header>
-    <h1>OLÁ, SOU UM HEADER</h1>
-    <p>SOU O TEXTO DO HEADER</p>
+    <Title idTitle="" type="" text=""/>
   </header>
 </template>
 
 <script>
 // Imports
+import Title from './Micro/Title/Title.vue'
 
 export default {
-  name: 'Header'
+  name: 'Header',
+  components:{
+    Title, 
+  }
 }
 </script>
 
 <style scoped>
 header {
-  background-color: #eee;
-}
-h1 {
-  color: red;
+  width: 100vw;
 }
 </style>
