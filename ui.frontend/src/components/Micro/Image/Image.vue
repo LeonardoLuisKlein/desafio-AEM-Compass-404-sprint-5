@@ -1,5 +1,7 @@
 <template>
+  <div id="image-container">
   <img :src="src" />
+  </div>
 </template>
 
 <script>
@@ -14,14 +16,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-template {
+#image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-
-  img {
-    width: 40vw;
-  }
+  width: 50%;
+  height: 100%;
+  margin: 0 auto
 }
+  img {
+    width: 50vw;
+    max-height: 40vh;
+    margin-top: 16em;
+  }
+
 </style>
