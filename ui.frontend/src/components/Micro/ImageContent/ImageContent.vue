@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" />
+  <img :src="imgSrc" :alt="imgAlt" />
 </template>
 
 <script>
@@ -8,6 +8,9 @@ export default {
   props: {
     src: {
       type: String
+    },
+    imgAlt: {
+      type: String
     }
   }
 }
@@ -15,6 +18,6 @@ export default {
 
 <style scoped>
 img {
-  max-width: 40vw;
+  max-width: 50vw;
 }
 </style>
