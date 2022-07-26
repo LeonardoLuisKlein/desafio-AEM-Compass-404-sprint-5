@@ -39,20 +39,25 @@ export default {
   font-weight: 700;
   font-size: 4em;
   color: #333333;
+  max-width: 35vw;
+  text-align: left;
+  margin: 0;
 }
+
 #headTitle {
- font-family: 'Inconsolata';
-font-style: normal;
-font-weight: 700;
-font-size: 1.5em;
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
   color: #333333;
 }
-#footTitle{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-text-align: center;
-color: #BDBDBD;
+
+#footTitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #BDBDBD;
 }
 </style>

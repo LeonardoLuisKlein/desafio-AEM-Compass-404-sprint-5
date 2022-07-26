@@ -1,16 +1,9 @@
 <template>
-<section>
-    <Title
-    :idTitle="mainTitleId"
-    :type="mainType"
-    :text="mainTitleText" />
-    <TextContent
-    :idText="mainId"
-    :text="mainText"/>
-    <Button
-    :idButton="mainButtonId"
-    :text="mainButtonText"/>
-</section>
+  <section>
+    <Title :idTitle="mainTitleId" :type="mainType" :text="mainTitleText" />
+    <TextContent :idText="mainId" :text="mainText" />
+    <Button :idButton="mainButtonId" :text="mainButtonText" />
+  </section>
 </template>
 
 <script>
@@ -58,6 +51,9 @@ export default {
 
 <style lang="scss">
 section {
-  max-width: 36em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50vw;
 }
 </style>

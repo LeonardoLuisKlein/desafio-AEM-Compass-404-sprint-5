@@ -25,8 +25,9 @@ export default {
   font-weight: 400;
   font-size: 1.5em;
   color: #4F4F4F;
-  width: 23em;
-  margin-top: 2em;
+  max-width: 23vw;
+  text-align: left;
+  margin-top: 3em;
 }
 #basicRedText {
   font-family: 'Space Mono';
