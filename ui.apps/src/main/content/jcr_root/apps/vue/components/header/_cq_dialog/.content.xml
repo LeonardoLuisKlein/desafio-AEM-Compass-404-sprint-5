@@ -14,18 +14,18 @@
                     <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Text"
-                        name="./text"/>
+                        fieldLabel="Text Header"
+                        name="./textHead"/>
                         <idTitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="ID Title"
-                        name="./idTitle"/>
+                        name="./idHead"/>
                         <type
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Type"
-                        name="./type"/>
+                        name="./typeHead"/>
                 </items>
             </column>
         </items>
