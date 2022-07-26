@@ -6,7 +6,7 @@ import Image from './components/Micro/Image/Image'
 import Footer from './components/Experience-fragments/Footer/Footer'
 import Main from './components/Containers/Main/Main'
 import TextContent from './components/Micro/TextContent/TextContent'
-import TextContent from './components/Micro/Title/Title'
+import Title from './components/Micro/Title/Title'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,

@@ -19,6 +19,10 @@ export default {
     },
     idTitle: {
       type: String
+    },
+    type: {
+      type: String,
+      default: 'h1'
     }
   }
 }
