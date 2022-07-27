@@ -32,5 +32,8 @@ export default {
   font-size: 0.875em;
   color: #FFFFFF;
   margin-top: 3em;
+      @media (max-width: 768px) {
+    margin-top: 1em;
+  }
 }
 </style>

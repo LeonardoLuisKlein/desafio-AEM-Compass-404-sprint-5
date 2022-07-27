@@ -37,11 +37,15 @@ export default {
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 3em;
   color: #333333;
-  max-width: 35vw;
+  max-width: 25vw;
   text-align: left;
   margin: 0;
+
+  @media (max-width: 768px) {
+    max-width: 100vw;
+  }
 }
 
 #headTitle {
@@ -50,6 +54,7 @@ export default {
   font-weight: 700;
   font-size: 1.5em;
   color: #333333;
+  margin-left: 1em;
 }
 
 #footTitle {
@@ -60,5 +65,8 @@ export default {
   text-align: center;
   color: #BDBDBD;
   margin-top: 5em;
+    @media (max-width: 768px) {
+    margin-top: 0em;
+  }
 }
 </style>

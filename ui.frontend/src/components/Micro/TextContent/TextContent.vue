@@ -28,11 +28,9 @@ export default {
   max-width: 23vw;
   text-align: left;
   margin-top: 3em;
-}
-#basicRedText {
-  font-family: 'Space Mono';
-  font-weight: 400;
-  font-size: 1.5em;
-  color: red;
+    @media (max-width: 768px) {
+    max-width: 100vw;
+    margin-top: 1em;
+  }
 }
 </style>

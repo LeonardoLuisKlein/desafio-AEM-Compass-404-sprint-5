@@ -1,9 +1,9 @@
 <template>
-  <section>
+  <main>
     <Title :idTitle="mainTitleId" :type="mainType" :text="mainTitleText" />
     <TextContent :idText="mainId" :text="mainText" />
     <Button :idButton="mainButtonId" :text="mainButtonText" />
-  </section>
+  </main>
 </template>
 
 <script>
@@ -50,11 +50,24 @@ export default {
 </script>
 
 <style lang="scss">
-section {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 50vw;
-  margin-top: 16em;
+  width: 49vw;
+  margin-top: 10em;
+  flex-wrap: wrap;
+    @media (max-width: 768px) {
+    width: 98%;
+    margin-top: 0em;
+    margin-left: 0.3em
+  }
 }
 </style>

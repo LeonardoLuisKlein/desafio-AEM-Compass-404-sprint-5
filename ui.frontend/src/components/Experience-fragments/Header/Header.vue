@@ -30,7 +30,13 @@ export default {
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
-  width: 100vw;
+  width: 95vw;
 }
 </style>

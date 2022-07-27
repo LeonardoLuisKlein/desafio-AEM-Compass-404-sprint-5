@@ -1,7 +1,7 @@
 <template>
-<footer>
+  <footer>
     <Title :idTitle="idFoot" :type="typeFoot" :text="textFoot" />
-</footer>
+  </footer>
 </template>
 
 <script>
@@ -29,16 +29,24 @@ export default {
 </script>
 
 <style lang="scss">
-footer{
-    width: 100vw;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#basicFooter{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-text-align: center;
-color: #BDBDBD;
-margin-top: 5em;
+
+footer {
+  width: 99vw;
+  position: absolute;
+  bottom: 0px;
+}
+
+#basicFooter {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #BDBDBD;
 }
 </style>
