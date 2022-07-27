@@ -55,5 +55,6 @@ section {
   flex-direction: column;
   align-content: center;
   width: 50vw;
+  margin-top: 16em;
 }
 </style>
