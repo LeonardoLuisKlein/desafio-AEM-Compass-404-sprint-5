@@ -60,7 +60,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  align-content: center;
   width: 49vw;
   margin-top: 10em;
   flex-wrap: wrap;
