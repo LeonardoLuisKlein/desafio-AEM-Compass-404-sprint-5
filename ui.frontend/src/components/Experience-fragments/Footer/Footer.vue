@@ -39,6 +39,9 @@ footer {
   width: 99vw;
   position: absolute;
   bottom: 0px;
+    @media (max-width: 380px) {
+    bottom: -10px
+  }
 }
 
 #basicFooter {

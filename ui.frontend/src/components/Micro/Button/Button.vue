@@ -32,7 +32,17 @@ export default {
   font-size: 0.875em;
   color: #FFFFFF;
   margin-top: 3em;
-      @media (max-width: 768px) {
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  #basicButton:hover {
+    background-color: #414141;
+    transition: 0.5s;
+    opacity: 1
+  }
+
+  @media (max-width: 768px) {
     margin-top: 1em;
   }
 }
