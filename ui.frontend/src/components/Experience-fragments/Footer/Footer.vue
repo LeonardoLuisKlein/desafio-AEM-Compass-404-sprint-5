@@ -22,7 +22,7 @@ export default {
     },
     typeFoot: {
       type: String,
-      default: 'h1'
+      default: 'h2'
     }
   }
 }
@@ -36,11 +36,16 @@ body {
 }
 
 footer {
-  width: 99vw;
-  position: absolute;
-  bottom: 0px;
-    @media (max-width: 380px) {
-    bottom: -10px
+width: 100vw;
+height: 27vh;
+display: flex;
+justify-content: end;
+align-items: center;
+flex-direction: column;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 12vh;
+        font-size: 0.7em;
   }
 }
 
