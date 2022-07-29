@@ -1,8 +1,8 @@
 <template>
   <main>
-    <Title :idTitle="mainTitleId" :type="mainType" :text="mainTitleText" />
-    <TextContent :idText="mainId" :text="mainText" />
-    <Button :idButton="mainButtonId" :text="mainButtonText" />
+    <Title :idTitle="mainTitleId" :type="mainType" :text="mainTitleText" :fontFamily="fontTitleMain" :colorField="colorTitleMain" />
+    <TextContent :idText="mainId" :text="mainText" :fontFamily="fontTextMain" :colorField="colorTextMain" />
+    <Button :idButton="mainButtonId" :text="mainButtonText" :buttonColor="mainButton" />
   </main>
 </template>
 
@@ -44,6 +44,26 @@ export default {
     mainButtonText: {
       type: String,
       default: 'BACK TO HOME PAGE'
+    },
+    mainButton: {
+      type: String,
+      default: '#333333'
+    },
+    fontTitleMain: {
+      type: String,
+      default: 'Space Mono'
+    },
+    colorTitleMain: {
+      type: String,
+      default: '#333333'
+    },
+    fontTextMain: {
+      type: String,
+      default: 'Space Mono'
+    },
+    colorTextMain: {
+      type: String,
+      default: '#333333'
     }
   }
 }
@@ -63,7 +83,8 @@ main {
   width: 49vw;
   margin-top: 10em;
   flex-wrap: wrap;
-    @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     width: 98%;
     margin-top: 0em;
     margin-left: 0.3em
