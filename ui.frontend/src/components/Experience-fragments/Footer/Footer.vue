@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <Title :idTitle="idFoot" :type="typeFoot" :text="textFoot" />
+    <Title :idTitle="idFoot" :type="typeFoot" :text="textFoot" :fontFamily="fontFooter" :colorField="colorFooter"/>
   </footer>
 </template>
 
@@ -23,6 +23,14 @@ export default {
     typeFoot: {
       type: String,
       default: 'h2'
+    },
+    fontFooter: {
+      type: String,
+      default: 'Montserrat'
+    },
+    colorFooter: {
+      type: String,
+      default: '#BDBDBD'
     }
   }
 }

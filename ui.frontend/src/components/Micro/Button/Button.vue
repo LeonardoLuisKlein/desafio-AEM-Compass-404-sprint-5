@@ -1,5 +1,5 @@
 <template>
-  <button :id="idButton">{{ text }}</button>
+  <button :id="idButton" :style="{ 'background-color': buttonColor }">{{ text }}</button>
 </template>
 
 <script>
@@ -11,6 +11,9 @@ export default {
       default: ''
     },
     idButton: {
+      type: String
+    },
+    buttonColor: {
       type: String
     }
   }
@@ -25,7 +28,6 @@ export default {
   width: 13.5em;
   height: 4.25em;
   background-color: #333333;
-  border-color: #333333;
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
