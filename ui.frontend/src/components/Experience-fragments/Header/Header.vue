@@ -1,6 +1,6 @@
 <template>
   <header>
-    <Title :idTitle="idHead" :type="typeHead" :text="textHead" />
+    <Title :idTitle="idHead" :type="typeHead" :text="textHead" :fontFamily="fontHeader" :colorField="colorHeader" />
   </header>
 </template>
 
@@ -24,6 +24,14 @@ export default {
     typeHead: {
       type: String,
       default: 'h1'
+    },
+    fontHeader: {
+      type: String,
+      default: 'Inconsolata'
+    },
+    colorHeader: {
+      type: String,
+      default: '#333333'
     }
   }
 }
