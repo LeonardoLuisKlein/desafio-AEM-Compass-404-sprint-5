@@ -45,6 +45,7 @@ export default {
 
   @media (max-width: 768px) {
     max-width: 100vw;
+    font-size: 2em;
   }
 }
 

@@ -31,6 +31,7 @@ export default {
     @media (max-width: 768px) {
     max-width: 100vw;
     margin-top: 1em;
+    font-size: 1.2em;
   }
 }
 </style>
