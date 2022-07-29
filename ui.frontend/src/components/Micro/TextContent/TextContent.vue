@@ -1,5 +1,5 @@
 <template>
-  <p :id="idText">{{ text }}</p>
+  <p :id="idText" :style="{ 'font-family': fontFamily, 'color': colorField, }">{{ text }}</p>
 </template>
 
 <script>
@@ -12,6 +12,12 @@ export default {
     },
     idText: {
       type: String
+    },
+    fontFamily: {
+      type: String
+    },
+    colorField: {
+      type: String
     }
   }
 }
@@ -19,6 +25,8 @@ export default {
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 #basicText {
   font-family: 'Space Mono';
@@ -28,7 +36,8 @@ export default {
   max-width: 23vw;
   text-align: left;
   margin-top: 3em;
-    @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     max-width: 100vw;
     margin-top: 1em;
     font-size: 1.2em;

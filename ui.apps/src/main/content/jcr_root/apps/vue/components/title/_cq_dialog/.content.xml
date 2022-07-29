@@ -21,11 +21,36 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="ID Title"
                         name="./idTitle"/>
-                        <type
+                            <type cq-msm-lockable="./type"
+                            defaultValue="h2"
+                            fieldLabel="Select a Type:"
+                            jcr:primaryType="nt:unstructured"
+                            name="./type"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            value="false">
+                            <items jcr:primaryType="nt:unstructured">
+                            <H1 jcr:primaryType="nt:unstructured" text="H1" value="h1"/>
+                            <H2 jcr:primaryType="nt:unstructured" text="H2" value="h2"/>
+                            <H3 jcr:primaryType="nt:unstructured" text="H3" value="h3 Mono"/>
+                            <H4 jcr:primaryType="nt:unstructured" text="H4" value="h4"/>
+                            <H5 jcr:primaryType="nt:unstructured" text="H5" value="h5"/>
+                            <H6 jcr:primaryType="nt:unstructured" text="H6" value="h6 Mono"/>
+                        <color
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Type"
-                        name="./type"/>
+                        sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                        fieldLabel="Color"
+                        name="./colorField"/>
+                            <font cq-msm-lockable="./fontFamily"
+                            defaultValue="Inconsolata"
+                            fieldLabel="Select a font-family:"
+                            jcr:primaryType="nt:unstructured"
+                            name="./fontFamily"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            value="false">
+                            <items jcr:primaryType="nt:unstructured">
+                            <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                            <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                            <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
                 </items>
             </column>
         </items>

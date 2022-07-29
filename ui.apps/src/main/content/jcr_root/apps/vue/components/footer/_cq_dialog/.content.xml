@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured"
-    jcr:title="Compare Products Services" sling:resourceType="cq/gui/components/authoring/dialog"
+    jcr:title="Footer properties" sling:resourceType="cq/gui/components/authoring/dialog"
     mode="edit" helpPath="style-guide.html#compare-rows-services">
     <content
         jcr:primaryType="nt:unstructured"
@@ -52,6 +52,24 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="ID Title"
                         name="./idFoot"/>
+                        <color
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                        fieldLabel="Color"
+                        name="./colorFooter"/>
+                        <font cq-msm-lockable="./fontFooter"
+                        defaultValue="Inconsolata"
+                        fieldLabel="Select a font-family:"
+                        jcr:primaryType="nt:unstructured"
+                        name="./fontFooter"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        value="false">
+                        <items jcr:primaryType="nt:unstructured">
+                        <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                        <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                         <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                            </items>
+                          </font>
                         </items>
                     </column>
                 </items>
