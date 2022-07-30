@@ -2,7 +2,7 @@
   <main>
     <Title :idTitle="mainTitleId" :type="mainType" :text="mainTitleText" :fontFamily="fontTitleMain" :colorField="colorTitleMain" />
     <TextContent :idText="mainId" :text="mainText" :fontFamily="fontTextMain" :colorField="colorTextMain" />
-    <Button :idButton="mainButtonId" :text="mainButtonText" :buttonColor="mainButton" />
+    <Button :idButton="mainButtonId" :text="mainButtonText" :buttonColor="mainButton" :buttonFont="fontButtonMain" />
   </main>
 </template>
 
@@ -64,6 +64,10 @@ export default {
     colorTextMain: {
       type: String,
       default: '#333333'
+    },
+    fontButtonMain: {
+      type: String,
+      default: 'Space Mono'
     }
   }
 }
