@@ -45,7 +45,7 @@ body {
 
 footer {
 width: 100vw;
-height: 27vh;
+height: 23vh;
 display: flex;
 justify-content: end;
 align-items: center;
