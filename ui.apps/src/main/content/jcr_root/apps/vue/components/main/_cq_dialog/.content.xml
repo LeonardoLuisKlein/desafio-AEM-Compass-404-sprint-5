@@ -96,9 +96,9 @@
                                     <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
                                     <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
                                     <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
-                                            </items>
-                                        </fontText>
                                     </items>
+                                </fontText>
+                            </items>
                     </column>
                 </items>
             </tab2>
@@ -130,7 +130,19 @@
                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
                             fieldLabel="Color"
                             name="./mainButton"/>
-                            </tab3> 
+                            <fontButton cq-msm-lockable="./fontButtonMain"
+                            defaultValue="Space Mono"
+                            fieldLabel="Select a font-family:"
+                            jcr:primaryType="nt:unstructured"
+                            name="./fontButtonMain"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            value="false">
+                            <items jcr:primaryType="nt:unstructured">
+                            <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                            <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                            <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                            </items>
+                            </fontButton> 
                         </items>
                     </column>
                 </items>

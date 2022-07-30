@@ -1,5 +1,5 @@
 <template>
-  <button :id="idButton" :style="{ 'background-color': buttonColor }">{{ text }}</button>
+  <button :id="idButton" :style="{ 'background-color': buttonColor, 'font-family': buttonFont }">{{ text }}</button>
 </template>
 
 <script>
@@ -15,6 +15,9 @@ export default {
     },
     buttonColor: {
       type: String
+    },
+    buttonFont: {
+      type: String
     }
   }
 }
@@ -23,6 +26,8 @@ export default {
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 #basicButton {
   width: 13.5em;
