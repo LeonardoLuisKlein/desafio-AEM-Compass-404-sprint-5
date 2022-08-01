@@ -51,6 +51,7 @@
                             <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
                             <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
                             <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                    </font>
                 </items>
             </column>
         </items>
